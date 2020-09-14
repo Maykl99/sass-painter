@@ -93,7 +93,11 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-console.log('hello world!');
+/* $(function(){
+    $('.image-effect').mousemove(function(){
+        $(this).css()
+    });
+}); */
 
 /***/ }),
 

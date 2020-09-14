@@ -5,7 +5,18 @@
     flex-direction: $direction;
 }
 
+@mixin flexAstr($valProprieta0,$val0,$valProprieta1,$val1){
+    display: flex;
+    #{$valProprieta0}: $val0;
+    #{$valProprieta1}: $val1;
+}
+
 @mixin height($altezza, $altezza1){
     height: calc(#{$altezza} - #{$altezza1});
+}
+
+@mixin background-image($valProprieta0,$val0,$valProprieta1,$val1){
+    #{$valProprieta0}: $val0;
+    #{$valProprieta1}: $val1;
 }
 

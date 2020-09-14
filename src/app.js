@@ -1,1 +1,5 @@
-console.log('hello world!')
+/* $(function(){
+    $('.image-effect').mousemove(function(){
+        $(this).css()
+    });
+}); */

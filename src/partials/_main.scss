@@ -1,20 +1,57 @@
 main{
     height: 1000px;
-    .main-container-child-1{
+    .parallax{
+        background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg');
+        @include background-image(background-attachment,fixed,background-position,center);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+    .#{main}-container-child-1{
         background-color: #E6E6E6;
         margin: 0 auto;
         height: 8%;
+        position: sticky;
+        top: 0;
         ul{
             width: 1000px;
-            display: flex;
-            height: 100%;
-            justify-content: space-evenly;
+            height: $height;
+            @include flexAstr(align-items,center,justify-content, space-evenly);
             list-style-type: none;
-            align-items: center;
             text-transform: uppercase;
             li{
                 color: #555;
             }
+        }
+    }
+    .#{main}-container-child-2{
+        background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro-bg.jpg);
+        @include background-image(background-repeat,no-repeat,background-position,center);
+        background-color: #131212;
+        background-size: contain;
+        height: 500px;
+        .item-text{
+            width: 25%;
+            color: white;
+            padding: 32px;
+        }
+    }
+    .#{main}-container-child-3{
+        .item-text-2{
+            padding: 32px;
+            margin: 50px auto;
+            width: 60%;
+            h2{
+                margin-bottom: 30px;
+            }
+        }
+        .image-effect{
+            background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/before-after/before-04.jpg');
+            @include background-image(background-repeat,no-repeat,background-position,center);
+            background-color: #131212;
+            background-size: contain;
+            height: 500px;
+            filter: grayscale(100%);
         }
     }
 }

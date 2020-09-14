@@ -59,7 +59,8 @@ header .container-child-2 .header-bottom-list {
   width: 1000px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  justify-content: normal;
   color: white;
 }
 
@@ -72,9 +73,10 @@ header .container-child-2 .header-bottom-list .navbar {
 }
 
 header .container-child-2 .header-bottom-list .navbar .list-item-child-2 {
-  display: flex;
-  justify-content: space-between;
   list-style-type: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 header .container-child-3 {
@@ -92,17 +94,17 @@ header .container-child-3 .jumbotron {
   margin: 0 auto;
 }
 
-header .container-child-3 .jumbotron .jumbotron-child-0 {
+header .container-child-3 .jumbotron-child-0 {
   flex: 0 0 25%;
-  display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
   padding-bottom: 20px;
   color: white;
 }
 
-header .container-child-3 .jumbotron .jumbotron-child-1 {
+header .container-child-3 .jumbotron-child-1 {
   flex: 0 0 45%;
   color: white;
   padding: 50px 0;
@@ -110,13 +112,16 @@ header .container-child-3 .jumbotron .jumbotron-child-1 {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
-header .container-child-3 .jumbotron .jumbotron-child-1 ul {
+header .container-child-3 .jumbotron-child-1 ul {
   list-style-type: none;
 }
 
-header .container-child-3 .jumbotron .jumbotron-child-2 {
+header .container-child-3 .jumbotron-child-2 {
   margin-top: 20px;
   flex: 0 0 33%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -127,23 +132,70 @@ main {
   height: 1000px;
 }
 
+main .parallax {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
 main .main-container-child-1 {
   background-color: #E6E6E6;
   margin: 0 auto;
   height: 8%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 main .main-container-child-1 ul {
   width: 1000px;
-  display: flex;
   height: 100%;
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
   list-style-type: none;
-  align-items: center;
   text-transform: uppercase;
 }
 
 main .main-container-child-1 ul li {
   color: #555;
+}
+
+main .main-container-child-2 {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #131212;
+  background-size: contain;
+  height: 500px;
+}
+
+main .main-container-child-2 .item-text {
+  width: 25%;
+  color: white;
+  padding: 32px;
+}
+
+main .main-container-child-3 .item-text-2 {
+  padding: 32px;
+  margin: 50px auto;
+  width: 60%;
+}
+
+main .main-container-child-3 .item-text-2 h2 {
+  margin-bottom: 30px;
+}
+
+main .main-container-child-3 .image-effect {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/before-after/before-04.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #131212;
+  background-size: contain;
+  height: 500px;
+  filter: grayscale(100%);
 }
 
