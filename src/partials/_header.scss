@@ -26,22 +26,26 @@ header{
     }
 
     .container-child-2{
-        @include height(500px,400px);
-        background-color:tomato;
+        @include height(500px,420px);
+        background-color:$coloreHeader;
         width: 100%;
         .header-bottom-list{
             height: 100%;
+            width: 1000px;
+            margin: 0 auto;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
             align-items: center;
-            .navbar ul.list-item-child-2{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: stretch;
-                list-style: none;
-
+            color: white;
+            .logo{
+                width: 20%;
+            }
+            .navbar{
+                width: 80%;
+                .list-item-child-2{
+                    display: flex;
+                    justify-content: space-between;
+                    list-style-type: none;
+                }
             }
         }
     }
@@ -49,11 +53,9 @@ header{
     .container-child-3{
         @include height(500px,200px);
         background-color: $coloreHeader;
-        /* background-image: url(https://i.ytimg.com/vi/7aLF9sazWy8/maxresdefault.jpg);
-        width: 100%;
-        background-position: center;
-        background-repeat: no-repeat; */
-        background-color: $coloreHeader;
+        background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
+        background-size: cover;
+        background-position: top center;
     }
 }
 
