@@ -16,7 +16,6 @@ body {
 
 header {
   width: 100%;
-  height: 500px;
 }
 
 header .container-child-1 {
@@ -122,5 +121,29 @@ header .container-child-3 .jumbotron .jumbotron-child-2 {
   flex: 0 0 33%;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px 10px;
+}
+
+main {
+  height: 1000px;
+}
+
+main .main-container-child-1 {
+  background-color: #E6E6E6;
+  margin: 0 auto;
+  height: 8%;
+}
+
+main .main-container-child-1 ul {
+  width: 1000px;
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+main .main-container-child-1 ul li {
+  color: #555;
 }
 

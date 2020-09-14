@@ -1,6 +1,5 @@
 header{
     width: 100%;
-    height: $altezzaHeader;
     .container-child-1{
         @include height(500px,450px);
         background-color: $coloreHeader;
