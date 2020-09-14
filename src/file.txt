@@ -1,1 +1,10 @@
 LAVORARE SOLO QUI (SRC), NON TOCCARE LA CARTELLA DIST!
+
+/* @mixin icon($name,$marginTop,$y,$marginLeft,$x){
+    .icon-#{$name}{
+        background-image: url("/icon/#{$name}.svg");
+        position: absolute;
+        #{$marginTop}: $y;
+        #{$marginLeft}: $x;
+    }
+} */
