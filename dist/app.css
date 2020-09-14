@@ -113,6 +113,10 @@ header .container-child-3 .jumbotron .jumbotron-child-1 {
   align-items: flex-start;
 }
 
+header .container-child-3 .jumbotron .jumbotron-child-1 ul {
+  list-style-type: none;
+}
+
 header .container-child-3 .jumbotron .jumbotron-child-2 {
   margin-top: 20px;
   flex: 0 0 33%;

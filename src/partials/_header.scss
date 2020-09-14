@@ -7,16 +7,16 @@ header{
         width: 100%;
         ul.list-items-child-1{
             @include flex(flex-end,center,initial);
-            list-style-type: none;
+            list-style-type: $none;
             padding-right: 130px;
-            line-height: 50px;
+            line-height: $lineHeightHeader;
             li{
                 padding-left: 20px;
                 color: $coloreLiHeader;
                 span{
                     color: #009cff;
                     a{
-                        text-decoration: none;
+                        text-decoration: $none;
                         color: $coloreLiHeader;
                     }
                 }
@@ -44,7 +44,7 @@ header{
                 .list-item-child-2{
                     display: flex;
                     justify-content: space-between;
-                    list-style-type: none;
+                    list-style-type: $none;
                 }
             }
         }
@@ -78,6 +78,9 @@ header{
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: flex-start;
+                ul{
+                    list-style-type: $none;
+                }
             }
             .jumbotron-child-2{
                 margin-top: 20px;
